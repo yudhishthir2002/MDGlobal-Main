@@ -1,0 +1,32 @@
+.testimonialsMainHeading{
+    margin-bottom: 20px;
+}
+
+.testimonialsCardsHeading{
+   padding: 7px;
+}
+.testimonialsCardsQuote{
+    padding: 10px;
+}
+.testimonialsCardsStars{
+    margin-top: 9px;
+}
+.testimonialsCardsMainHeading{
+    margin-top: 10px;
+}
+
+.MovingButtonLeft{
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+
+.MovingButtonRight{
+    margin-right: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}

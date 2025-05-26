@@ -1,0 +1,33 @@
+/* import './RecruitmentAgenciesInDubai.css'; */
+.RecruitmentAgenciesInDubaiMain{
+    padding: 20px;
+}
+/* Base styling for all p tags */
+/* Base styling for all p tags */
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+/* Headings color and spacing */
+h2, h3 {
+  color: #1f2937; /* Tailwind's gray-800 */
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Optional: Add specific padding to late-article if needed */
+.late-article {
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #111827; /* Tailwind's gray-900 */
+}

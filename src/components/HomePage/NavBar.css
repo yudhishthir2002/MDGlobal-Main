@@ -1,0 +1,29 @@
+
+
+nav  ul {
+  margin: 2px;
+  padding: 16px;
+  gap: 20px;
+}
+nav :nth-child(2) ul li :hover{
+  text-decoration: underline;
+  font-size: 15px;
+  z-index: 100;
+}
+.hambar{
+  margin-right: 30px;
+  padding: 10px;
+}
+
+.navElement{
+  padding-bottom:10px;
+}
+.MainNavElement{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+
+

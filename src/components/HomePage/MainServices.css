@@ -1,0 +1,71 @@
+/* Neumorphism shadow */
+.homepage-service-shadow {
+  /* box-shadow: 6px 6px #d1d9e6, -6px -6px 12px #ffffff; */
+}
+
+/* Image wrapper */
+.homepage-service-image-wrapper {
+  transition: box-shadow 0.3s ease;
+}
+
+.homepage-service-image-wrapper:hover {
+  box-shadow: 0 0 15px rgba(0, 64, 133, 0.2);
+}
+
+/* Service image */
+.homepage-service-image {
+  transition: transform 0.3s ease;
+  padding: 10px; /* Added padding to all images */
+}
+
+/* Service title */
+.homepage-service-title {
+  padding: 15px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #004085, #0466c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Main title */
+.homepage-service-title-main {
+  padding: 15px;
+  font-weight: 800;
+  text-align: center; /* Explicitly center the main title */
+}
+
+/* Service subtitle */
+.homepage-service-subtitle {
+  padding-left: 15px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+/* Service text */
+.homepage-service-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+/* Description paragraph */
+.homepage-service-description {
+  /* text-align: center; */
+  text-align: justify;
+  padding: 15px;
+}
+
+/* Intro section */
+#homepage-service-intro {
+  text-align: center;
+  margin: 0 auto 2rem auto;
+}
+
+@media (min-width: 640px) {
+  #homepage-service-intro {
+    margin-bottom: 3rem;
+  }
+}

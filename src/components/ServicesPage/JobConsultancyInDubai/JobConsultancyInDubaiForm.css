@@ -1,0 +1,177 @@
+.jcid-section {
+  min-height: 100vh;
+  /* background-color: #f8fafc; */
+  padding: 4rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.jcid-heading {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 4rem;
+  line-height: 1.3;
+}
+
+.jcid-container {
+  max-width: 82rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.jcid-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #374151;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.jcid-form-wrapper {
+  width: 100%;
+}
+
+.jcid-form {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.jcid-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.jcid-label {
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.jcid-input {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jcid-input:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.15);
+}
+
+.jcid-file-input::-webkit-file-upload-button {
+  background-color: #f0f9ff;
+  color: #2563eb;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.jcid-file-input::-webkit-file-upload-button:hover {
+  background-color: #e0f2fe;
+}
+
+.jcid-file-info {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.jcid-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.jcid-submit-button {
+  width: 100%;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.jcid-submit-button:hover {
+  background-color: #1e40af;
+  transform: translateY(-1px);
+}
+
+.jcid-submit-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (min-width: 1024px) {
+  .jcid-heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .jcid-container {
+    flex-direction: row;
+  }
+
+  .jcid-content {
+    width: 50%;
+  }
+
+  .jcid-form-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .jcid-heading {
+    font-size: 2.25rem;
+  }
+
+  .jcid-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .jcid-form {
+    padding: 1.75rem;
+  }
+
+  .jcid-input {
+    padding: 0.75rem;
+  }
+
+  .jcid-submit-button {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .jcid-heading {
+    font-size: 1.75rem;
+  }
+
+  .jcid-content {
+    font-size: 1rem;
+  }
+
+  .jcid-label {
+    font-size: 0.95rem;
+  }
+}

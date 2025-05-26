@@ -1,0 +1,212 @@
+#vision-section {
+    padding: 40px 20px;
+    background-color: #fafafa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.vision-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.vision-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.vision-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vision-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.vision-subtitle {
+    font-size: 20px;
+    color: #f97316;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.vision-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.vision-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+/* Mission Section */
+#mission-section {
+    padding: 40px 20px;
+    background-color: #fafafa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.mission-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.mission-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mission-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.mission-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-subtitle {
+    font-size: 20px;
+    color: #f97316;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.mission-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.mission-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+/* Responsive Design for Large Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #vision-section, #mission-section {
+        padding: 30px 15px;
+    }
+
+    .vision-container, .mission-container {
+        gap: 30px;
+    }
+
+    .vision-title, .mission-title {
+        font-size: 24px;
+    }
+
+    .vision-subtitle, .mission-subtitle {
+        font-size: 18px;
+    }
+
+    .vision-text, .mission-text {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .vision-image-wrapper, .mission-image-wrapper {
+        max-width: 500px;
+    }
+}
+
+/* Responsive Design for Tablets and Small Laptops (max-width: 768px) */
+@media (max-width: 768px) {
+    #vision-section, #mission-section {
+        padding: 25px 15px;
+    }
+
+    .vision-container, .mission-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .vision-content, .mission-content {
+        min-width: 100%;
+        text-align: left;
+    }
+
+    .vision-image-wrapper, .mission-image-wrapper {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .vision-title, .mission-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .vision-subtitle, .mission-subtitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .vision-text, .mission-text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+}
+
+/* Responsive Design for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    #vision-section, #mission-section {
+        padding: 20px 10px;
+    }
+
+    .vision-container, .mission-container {
+        gap: 15px;
+    }
+
+    .vision-title, .mission-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .vision-subtitle, .mission-subtitle {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .vision-text, .mission-text {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .vision-image-wrapper, .mission-image-wrapper {
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,163 @@
+.CS_Main {
+  padding: 2rem; /* Reduced padding, using rem for scalability */
+  max-width: 1200px; /* Constrain width to prevent overflow */
+  margin: 0 auto; /* Center the container */
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.CS_WhyChooseItem {
+  margin: 2rem; /* Reduced margin */
+  padding: 1.5rem; /* Reduced padding */
+  min-height: auto; /* Remove fixed height to prevent text overflow */
+  background-color: #f9fafb; /* Tailwind's gray-50 */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.CS_FormInput,
+.CS_FormButton {
+  margin: 0.5rem auto; /* Center inputs and reduce margin */
+  padding: 0.5rem 1rem; /* Adjust padding */
+  width: 90%; /* Ensure inputs fit within parent */
+  border: 1px solid #d1d5db; /* Tailwind's gray-300 */
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.CS_FAQContainer {
+  max-width: 100%; /* Allow FAQ to scale with container */
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.CS_FAQItem {
+  background-color: white;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.CS_FAQItem.active {
+  border: 1px solid #e2e2e2;
+}
+
+.CS_FAQQuestion {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: rgb(49, 48, 48);
+}
+
+.CS_FAQAnswer {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.CS_SectionHeading {
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+  font-size: 1.5rem; /* 30px equivalent */
+  text-align: center;
+  color: #1f2937; /* Tailwind's gray-800 */
+}
+
+.CS_IndustryItem {
+  margin: 1rem 0;
+}
+span{
+  color: #474849;
+  font-size: 16px;
+}
+
+.CS_IndustryTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem; /* 20px equivalent */
+  color: #4b5563; /* Tailwind's gray-600 */
+}
+
+.CS_ServicesParagraph {
+  padding-right: 20px;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.CS_FormInput::placeholder {
+  color: #9ca3af; /* Tailwind's gray-400 */
+  opacity: 1;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .CS_Main {
+    padding: 1.5rem;
+  }
+
+  .CS_SectionHeading {
+    font-size: 1.5rem; /* 24px for tablets */
+  }
+
+  .CS_WhyChooseItem {
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  /* Stack flex items vertically for smaller screens */
+  .CS_ServicesContainer,
+  .CS_IndustriesContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .CS_ServicesContainer > div,
+  .CS_IndustriesContainer > div {
+    width: 100%; /* Full width for stacked items */
+  }
+
+  .CS_FormInput,
+  .CS_FormButton {
+    width: 95%;
+  }
+}
+
+@media (max-width: 640px) {
+  .CS_Main {
+    padding: 1rem;
+  }
+
+  .CS_SectionHeading {
+    font-size: 1.25rem; /* 20px for mobile */
+  }
+
+  .CS_WhyChooseItem {
+    padding: 0.75rem;
+    margin: 2rem;
+  }
+
+  .CS_FAQQuestion {
+    font-size: 1rem;
+  }
+
+  .CS_FAQAnswer {
+    font-size: 0.875rem;
+  }
+
+  .CS_FormInput,
+  .CS_FormButton {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .CS_IndustryTitle {
+    font-size: 1.125rem;
+  }
+}

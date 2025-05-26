@@ -1,0 +1,14 @@
+.WhyChooseJobConsultancyHeading {
+    font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937; /* Tailwind's gray-800 */
+  margin-bottom: 0.5rem;
+}
+
+.WhyChooseJobConsultancyText {
+  max-width: 90%;
+  text-align: center;
+  color: #4b5563; /* Tailwind's gray-600 */
+  font-size: 20px;
+  padding: 0 1rem;
+}

@@ -1,0 +1,54 @@
+.Header{
+    margin-bottom: 10px;
+}
+.PrivacyPolicyMain{
+    padding: 20px;
+    
+}
+ .PrivacypolicyP{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+ 
+} 
+.PrivacypolicyPMain{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.PrivacyPolicyArticle{
+    margin-top: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.privacyPolicyheading{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.PrivacypolicyList_element{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* PrivacyPolicy.css */
+/* .privacy-banner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .privacy-heading {
+    margin-top: 0.75rem;
+  }
+  
+  .privacy-underline {
+    margin-top: 0.75rem;
+  }
+  
+  .privacy-main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .privacy-content > article {
+    margin-bottom: 2rem;
+  } */
+  

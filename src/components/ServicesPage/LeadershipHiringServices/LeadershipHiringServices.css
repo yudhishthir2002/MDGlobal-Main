@@ -1,0 +1,135 @@
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-banner-ls {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 800;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-underline {
+  width: 60px;
+  height: 4px;
+  background: white;
+  margin-top: 10px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Intro Section */
+.section-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.intro-text .section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+}
+
+.section-description p {
+  margin-bottom: 0.8rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.intro-image .responsive-image {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Why Choose Section */
+#why-choose-md {
+  margin-top: 4rem;
+}
+
+.choose-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.choose-list {
+  list-style: none;
+  padding: 0;
+}
+
+.choose-item {
+  background-color: #fff;
+  border-left: 6px solid #007bff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.choose-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+  text-align: justify;
+}
+
+.choose-text {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Form Section */
+.form-section {
+  margin-top: 4rem;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .section-intro {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+}
