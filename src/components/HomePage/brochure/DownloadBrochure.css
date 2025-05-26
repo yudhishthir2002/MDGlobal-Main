@@ -1,39 +1,39 @@
 .download-form-wrapper {
-    margin: 2rem auto; /* mt-10 and mx-auto */
-    max-width: 42rem; /* Tailwind's max-w-2xl */
-    padding: 2rem 1rem; /* py-10 px-4 */
+    margin: 2rem auto;
+    max-width: 42rem; 
+    padding: 2rem 1rem;
   }
   
   @media (min-width: 768px) {
     .download-form-wrapper {
-      padding: 4rem 1rem; /* md:py-16 */
+      padding: 4rem 1rem;
     }
   }
   
   .download-form-box {
     background-color: white;
-    border-radius: 1rem; /* Tailwind's rounded-xl */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-xl */
-    padding: 1.5rem; /* Tailwind's p-6 */
+    border-radius: 1rem; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    padding: 1.5rem; 
   }
   
   @media (min-width: 768px) {
     .download-form-box {
-      padding: 2rem; /* Tailwind's md:p-10 */
+      padding: 2rem; 
     }
   }
   
   .download-title {
     text-align: center;
-    font-size: 1.875rem; /* Tailwind's text-3xl */
+    font-size: 1.875rem; 
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #1e40af; /* Tailwind's text-blue-700 */
+    color: #1e40af; 
   }
   
   .download-form {
     display: flex;
     flex-direction: column;
-    gap: 1.20rem; /* Tailwind's space-y-5 */
+    gap: 1.20rem; 
   }
   
