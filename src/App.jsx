@@ -17,6 +17,7 @@ import RecruitmentAgenciesInDubai from './components/ServicesPage/RecruitmentAge
 import ITRecruitmentAgenciesInDubai from './components/ServicesPage/ITRecruitmentAgenciesInDubai/ITRecruitmentAgenciesInDubai';
 import SubmitYourCV from './components/HomePage/SubmitYourCV/SubmitYourCV';
 import RequestACallBack from './components/HomePage/RequestACallBack/RequestACallBack';
+import DownloadBrochure from './components/HomePage/brochure/DownloadBrochure';
 
 const App = () => {
   const rout = [
@@ -93,6 +94,10 @@ const App = () => {
         {
           path: '/submit-your-cv',
           element: <SubmitYourCV></SubmitYourCV>,
+        },
+        {
+          path: '/download-brochure',
+          element: <DownloadBrochure></DownloadBrochure>,
         },
       ],
     },
