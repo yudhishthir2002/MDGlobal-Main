@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./FooterPage.css";
 import logo from "../../assets/images/Logo/Mdglobal (1).png";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
 const FooterPage = () => {
@@ -62,16 +63,20 @@ const FooterPage = () => {
 
   const address = [
     {
-      place: "India",
-      OfficeAddress: "Office UG 18, SRS Tower, Sec 31, Faridabad, Haryana",
-      Email: "hrindia@mdglobalhr.com",
-      PhoneNumber: "(+91) 82850 23400, 92123 62488",
+      place: 'India',
+      OfficeAddress: [
+        `PLOT NO 9, GALI NO. 11, ADARSH NAGAR, Ballabgarh, Faridabad-121004`,
+      ],
+      Email: 'hrindia@mdglobalhr.com',
+      PhoneNumber: '(+91) 82850 23400, 92123 62488',
     },
     {
-      place: "UAE Dubai",
-      OfficeAddress: "Al Fajer Complex, Office: 203-217, Second Floor, Oud Metha, Dubai",
-      Email: "hr@mdglobalhr.com",
-      PhoneNumber: "(+971) 52 498 4322, 56 503 5551",
+      place: 'UAE Dubai',
+      OfficeAddress: [
+        'One Stop Business centre, 3floor office no. 28 inside Al ghurair corporate office near union metro station',
+      ],
+      Email: 'hr@mdglobalhr.com',
+      PhoneNumber: '(+971) 52 498 4322, 56 503 5551',
     },
   ];
 
@@ -180,29 +185,46 @@ const FooterPage = () => {
           {address.map((loc, index) => (
             // <Link
             // to="/contact">
-              <motion.div
-                key={index}
-                className="footer-address"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 + 0.2 * index, duration: 0.5 }}
-                whileHover={{ y: -3 }}
-              >
-                <h4 className="footer-subheading">{loc.place}</h4>
-                <p className="footer-address-text">
-                  <span className="footer-label">Address:</span>{' '}
-                  {loc.OfficeAddress}
-                </p>
-                <p className="footer-address-text">
-                  <span className="footer-label">Email:</span>{' '}
-                  <a href={`mailto:${loc.Email}`} className="footer-email">
-                    {loc.Email}
-                  </a>
-                </p>
-                <p className="footer-address-text">
-                  <span className="footer-label">Phone:</span> {loc.PhoneNumber}
-                </p>
-              </motion.div>
+            <motion.div
+              key={index}
+              className="footer-address "
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 + 0.2 * index, duration: 0.5 }}
+              whileHover={{ y: -3 }}
+            >
+              <h4 className="footer-subheading">{loc.place}</h4>
+              <p className="footer-address-text">
+                <span className="footer-label">
+                  <span className="footer-icon-address h-10 w-10 flex items-center justify-center rounded-full  mr-2">
+                    <FaMapMarkerAlt className="text-white" />
+                  </span>
+                  {Array.isArray(loc.OfficeAddress)
+                    ? loc.OfficeAddress.map((addr, i) => (
+                        <div key={i} className="">
+                          {addr}
+                        </div>
+                      ))
+                    : loc.OfficeAddress}
+                </span>
+              </p>
+              <p className="footer-address-text">
+                <a href={`mailto:${loc.Email}`} className="footer-email flex">
+                  <span className="footer-icon-address h-10 w-8 flex items-center justify-center rounded-full ">
+                    <FaEnvelope className="text-white" />
+                  </span>
+                  <p className="text-[16px]"> {loc.Email}</p>
+                </a>
+              </p>
+              <p className="footer-address-text">
+                <span className="footer-label">
+                  <span className="footer-icon-address h-6 w-10 flex items-center justify-center rounded-full ">
+                    <FaPhoneAlt className="text-white" />
+                  </span>
+                  {loc.PhoneNumber}
+                </span>
+              </p>
+            </motion.div>
             // </Link>
           ))}
         </div>

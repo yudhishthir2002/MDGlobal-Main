@@ -123,6 +123,8 @@
 /* Address Section */
 .footer-address-section {
   margin-top: 2rem;
+  width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,6 +189,7 @@
 .footer-label {
   font-weight: 500;
   color: #e4e4e4;
+  display: flex;
 }
 
 .footer-email {
@@ -207,4 +210,10 @@
   color: #a0aec0;
   border-top: 1px solid #4a5568;
   font-family: "Inter", sans-serif;
+}
+.icons-footer-add{
+  margin: 5px;
+}
+.footer-icon-address{
+  margin:0.5rem;
 }

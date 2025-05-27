@@ -89,9 +89,9 @@ const Testimonials = () => {
                   <h4 className="testimonial-author-unique">
                     {testimonialsData[currentIndex].name}
                   </h4>
-                  <p className="testimonial-position-unique">
+                  {/* <p className="testimonial-position-unique">
                     {testimonialsData[currentIndex].role}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </motion.div>

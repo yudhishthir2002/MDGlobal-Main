@@ -1,7 +1,7 @@
-/* Centering and responsive layout for Testimonials component */
+
 .testimonials-section-unique {
     margin-top: 1rem;
-    background-color: #0b0bdb4d;
+    background-color:rgb(221, 221, 230);
     display: flex;
     justify-content: center;
     align-items: center;
