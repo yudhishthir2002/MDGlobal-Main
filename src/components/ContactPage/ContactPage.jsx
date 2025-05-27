@@ -47,6 +47,12 @@ const ContactPage = () => {
       email: 'hr@mdglobalhr.com',
       mapSrc:
         'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3608.8262116816813!2d55.30903882408264!3d25.242777779855395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAl%20Fajer%20Complex%2C%20Office%3A%20203-217%2C%20Second%20Floor%2C%20Oud%20Metha%2C%20Dubai!5e0!3m2!1sen!2sin!4v1745831021542!5m2!1sen!2sin',
+      facebookLike: ' https://www.facebook.com/officialmdglobalhr',
+      twitterHandle: '#',
+      linkedInProfile:
+        'https://www.linkedin.com/company/md-global-human-resource-consultingllc/',
+      instagramProfile:
+        'https://www.instagram.com/official_mdglobal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
     },
     {
       country: 'India Office',
@@ -56,6 +62,12 @@ const ContactPage = () => {
       email: 'hrindia@mdglobalhr.com',
       mapSrc:
         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.080935863823!2d77.30639257421481!3d28.446976492485113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce745c186e61f%3A0x671628d9df0d8a1c!2sSRS%20Towers!5e0!3m2!1sen!2sin!4v1745831274518!5m2!1sen!2sin',
+      facebookLike: ' https://www.facebook.com/mdglobalhrconsultingindia',
+      twitterHandle: '#',
+      linkedInProfile:
+        ' https://www.linkedin.com/company/md-global-hr-consulting-india/',
+      instagramProfile:
+        'https://www.instagram.com/md_globalhrindia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
     },
   ];
 
@@ -153,28 +165,28 @@ const ContactPage = () => {
                 </div>
                 <div className="OfficeMainSMMain flex space-x-4 mt-6">
                   <a
-                    href="#"
+                    href={office.facebookLike}
                     className="OfficeMainSM text-blue-600 hover:text-blue-800 transition-colors"
                     aria-label="Facebook"
                   >
                     <FaFacebookF size={20} />
                   </a>
                   <a
-                    href="#"
+                    href={office.twitterHandle}
                     className="OfficeMainSM text-blue-400 hover:text-blue-600 transition-colors"
                     aria-label="Twitter"
                   >
                     <FaTwitter size={20} />
                   </a>
                   <a
-                    href="#"
+                    href={office.linkedInProfile}
                     className="OfficeMainSM text-blue-700 hover:text-blue-900 transition-colors"
                     aria-label="LinkedIn"
                   >
                     <FaLinkedinIn size={20} />
                   </a>
                   <a
-                    href="#"
+                    href={office.instagramProfile}
                     className="OfficeMainSM text-pink-600 hover:text-pink-800 transition-colors"
                     aria-label="Instagram"
                   >
