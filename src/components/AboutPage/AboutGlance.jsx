@@ -101,14 +101,14 @@ const AboutGlance = () => {
               variants={itemVariants}
             >
               <motion.span
-                className="  text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold"
+                className="  text-3xl sm:text-4xl text-white md:text-5xl lg:text-4xl font-bold"
                 custom={index}
                 animate={numberControls}
                 initial={{ opacity: 0, scale: 1 }}
               >
                 {val.number}
               </motion.span>
-              <span className="   text-base sm:text-lg md:text-xl lg:text-2xl">
+              <span className=" text-white  text-base sm:text-lg md:text-xl lg:text-2xl">
                 {val.text}
               </span>
             </motion.div>

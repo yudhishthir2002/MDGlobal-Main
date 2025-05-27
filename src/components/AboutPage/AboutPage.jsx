@@ -73,9 +73,9 @@ const AboutPage = () => {
         <OurPresence />
       </section> */}
 
-      <section className="w-full">
-        {/* <AboutGlance /> */}
-      </section>
+      {/* <section className="w-full">
+        <AboutGlance />
+      </section> */}
 
       <section className="w-full">
         {/* <VisionMission /> */}
