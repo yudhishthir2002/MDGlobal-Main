@@ -54,8 +54,10 @@ const FooterPage = () => {
 
   const OurVerticals = [
     { heading: "BFSI", path: "/" },
+    { heading: "Oil & Gas", path: "/" },
     { heading: "FMCG", path: "/" },
     { heading: "Healthcare", path: "/" },
+    { heading: "Hospitality", path: "/" },
     { heading: "Automobile", path: "/" },
     { heading: "Manufacturing", path: "/" },
     { heading: "Information Technology", path: "/" },
@@ -171,9 +173,9 @@ const FooterPage = () => {
                   initial="initial"
                   whileHover="hover"
                 >
-                  <a href={item.path} className="footer-link">
+                  <div  className="footer-link">
                     <span className="footer-arrow">→</span> {item.heading}
-                  </a>
+                  </div>
                 </motion.li>
               ))}
             </ul>
@@ -194,7 +196,7 @@ const FooterPage = () => {
               whileHover={{ y: -3 }}
             >
               <h4 className="footer-subheading">{loc.place}</h4>
-              <p className="footer-address-text">
+              <div className="footer-address-text">
                 <span className="footer-label">
                   <span className="footer-icon-address h-10 w-10 flex items-center justify-center rounded-full  mr-2">
                     <FaMapMarkerAlt className="text-white" />
@@ -207,15 +209,15 @@ const FooterPage = () => {
                       ))
                     : loc.OfficeAddress}
                 </span>
-              </p>
-              <p className="footer-address-text">
+              </div>
+              <div className="footer-address-text">
                 <a href={`mailto:${loc.Email}`} className="footer-email flex">
                   <span className="footer-icon-address h-10 w-8 flex items-center justify-center rounded-full ">
                     <FaEnvelope className="text-white" />
                   </span>
                   <p className="text-[16px]"> {loc.Email}</p>
                 </a>
-              </p>
+              </div>
               <p className="footer-address-text">
                 <span className="footer-label">
                   <span className="footer-icon-address h-6 w-10 flex items-center justify-center rounded-full ">
