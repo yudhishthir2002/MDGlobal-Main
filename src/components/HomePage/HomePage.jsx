@@ -6,6 +6,7 @@ import Service from "./MainBody/Service";
 import MainServices from "./MainServices";
 import HomePageAbout from "./HomePageAbout";
 import Testimonials from "./Testimonials";
+import InfinitySlider from "../Slider/InfinitySlider";
 // import WhyCards from "./WhyCards";
 
 const HomePage = () => {
@@ -103,8 +104,8 @@ const HomePage = () => {
       </section>
 
       <section>
-        {/* <HomePageAbout /> */}
-        {/* <ClientCarousel/> */}
+       
+        <InfinitySlider></InfinitySlider>
         <Testimonials />
       </section>
     </>
