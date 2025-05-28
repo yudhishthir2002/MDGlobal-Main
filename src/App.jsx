@@ -34,7 +34,7 @@ const App = () => {
           element: <AboutPage></AboutPage>,
         },
         {
-          path: '/contact',
+          path: '/contact-us',
           element: <ContactPage></ContactPage>,
         },
         {

@@ -9,7 +9,7 @@ const navItems = [
   { name: 'Services', href: '/services' },
   { name: 'Blog', href: 'https://mdglobalhr.com/blog/' },
   { name: 'Career', href: '/jobs' },
-  { name: 'Contact Us', href: '/contact' },
+  { name: 'Contact Us', href: '/contact-us' },
 ];
 
 const NavBar = () => {

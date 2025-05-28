@@ -6,6 +6,7 @@ import VisionMission from "./VisionMission";
 import OurPresence from "./OurPresence";
 import OurUniqueness from "./OurUniqueness";
 import img from '../../assets/images/About/Banner.jpg';
+import FounderInfo from "./FounderInfo";
 
 const AboutPage = () => {
   const headerVariants = {
@@ -37,15 +38,15 @@ const AboutPage = () => {
         className="relative flex flex-col items-center justify-center w-full h-80 text-white overflow-hidden"
         style={{
           backgroundImage: `url(${img})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
         }}
         initial="hidden"
         animate="visible"
         variants={sectionVariants}
       >
-        <div className="absolute inset-0 bg-black/50"></div> 
+        <div className="absolute inset-0 bg-black/50"></div>
         <motion.h1
           className="text-4xl font-extrabold tracking-tight relative z-10 mt-2"
           variants={headerVariants}
@@ -68,25 +69,24 @@ const AboutPage = () => {
       >
         <AboutMDGlobal />
       </motion.section>
-
-      {/* <section className="w-full h-[120vh]">
-        <OurPresence />
-      </section> */}
-
-      {/* <section className="w-full">
-        <AboutGlance />
-      </section> */}
+      <motion.section
+        className="w-full py-12 sm:py-16 lg:py-20 bg-gray-50"
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <FounderInfo />
+        
+      </motion.section>
 
       <section className="w-full">
-        {/* <VisionMission /> */}
         <OurUniqueness />
       </section>
 
       <section className="w-full">
         <VisionMission />
-        
       </section>
-      
     </main>
   );
 };

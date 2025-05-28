@@ -64,6 +64,7 @@
     text-align: justify;
     color: #4b5563;
     line-height: 1.75;
+    
   }
   
   .mdg-image-section {
@@ -194,9 +195,9 @@
       padding: 1rem 1.5rem;
     }
   
-    .mdg-main-container {
+    /* .mdg-main-container {
       /* padding: 2rem 1.5rem; */
-    }
+    /* }  */
   
     .mdg-content-layout {
       gap: 4rem;
