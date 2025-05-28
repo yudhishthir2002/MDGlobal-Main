@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-// import img2 from './../../assets/images/About/FounderImg.jpeg';
 import './FounderInfo.css';
 
 const containerVariants = {
