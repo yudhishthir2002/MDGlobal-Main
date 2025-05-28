@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import './PermanentStaffingSolutions.css';
 import img from './../../../assets/images/About/Banner.jpg';
+import img2 from './../../../assets/Permanent Staffing/PermanentStaffing.jpeg';
 
 const PermanentStaffingSolutions = () => {
   const headerVariants = {
@@ -159,7 +160,7 @@ const PermanentStaffingSolutions = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <img
-                  src="https://mdglobalhr.com/wp-content/uploads/2024/10/MD-Global-HR-Recruitment-Agency.jpg"
+                  src={img2}
                   alt="Recruitment"
                   className="w-full h-auto max-w-full rounded-xl shadow-lg object-cover"
                 />
