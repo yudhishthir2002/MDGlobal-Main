@@ -2,7 +2,7 @@
 // import React from 'react';
 // import './FounderInfo.css';
 
-// const FounderInfo = () => { 
+// const FounderInfo = () => {
 // const containerVariants = {
 //   hidden: { opacity: 0, y: 50 },
 //   visible: {
@@ -194,6 +194,9 @@
 // };
 
 // export default FounderInfo;
+
+
+
 import React from 'react'
 
 const FounderInfo = () => {
