@@ -37,14 +37,14 @@ const SubmitYourCV = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     // const fullPhoneNumber = `${formData.countryCode}${formData.mobile}`;
     // const submittedData = {
-    //   ...formData,
-    //   fullPhoneNumber,
-    // };
-    // console.log('Form Data Submitted:', submittedData);
-// Add actual submission logic here (e.g., API call, EmailJS, Formspree)
+      //   ...formData,
+      //   fullPhoneNumber,
+      // };
+      // console.log('Form Data Submitted:', submittedData);
+      // Add actual submission logic here (e.g., API call, EmailJS, Formspree)
+      e.preventDefault();
 
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
   publicKey: 'YOUR_PUBLIC_KEY',
