@@ -16,7 +16,7 @@ const SubmitYourCV = () => {
     salary: '',
     cv: null,
     country: '',
-    countryCode: '+91', // Default to US
+    countryCode: '+91', 
     availability: '',
   });
 
@@ -56,7 +56,6 @@ const SubmitYourCV = () => {
   },
 );
 };
-;
 
   const headerVariants = {
     hidden: { y: 100, opacity: 0 },
