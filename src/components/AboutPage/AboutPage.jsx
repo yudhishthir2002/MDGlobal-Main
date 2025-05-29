@@ -69,17 +69,7 @@ const AboutPage = () => {
       >
         <AboutMDGlobal />
       </motion.section>
-      <motion.section
-        className="w-full py-12 sm:py-16 lg:py-20 bg-gray-50"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <FounderInfo />
-        
-      </motion.section>
-
+      
       <section className="w-full">
         <OurUniqueness />
       </section>

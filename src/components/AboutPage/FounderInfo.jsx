@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import './FounderInfo.css';
 
+const FounderInfo = () => { 
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -41,7 +42,6 @@ const imageMotion = {
   },
 };
 
-const FounderInfo = () => {
   return (
     <motion.div
       className="founder-main-container"
@@ -73,6 +73,7 @@ const FounderInfo = () => {
         >
           <article className="text-justify">
             <motion.p
+              
               initial={{ x: -40, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{

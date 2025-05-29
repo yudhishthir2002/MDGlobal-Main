@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import img from './../../../assets/images/About/Banner.jpg';
 import './SubmitYourCV.css';
 import countryData from './countryData.json'
+import emailjs from '@emailjs/browser';
 
 const SubmitYourCV = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
     mobile: '',
@@ -36,14 +38,25 @@ const SubmitYourCV = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const fullPhoneNumber = `${formData.countryCode}${formData.mobile}`;
-    const submittedData = {
-      ...formData,
-      fullPhoneNumber,
-    };
-    console.log('Form Data Submitted:', submittedData);
-    // Add actual submission logic here (e.g., API call, EmailJS, Formspree)
-  };
+    // const fullPhoneNumber = `${formData.countryCode}${formData.mobile}`;
+    // const submittedData = {
+    //   ...formData,
+    //   fullPhoneNumber,
+    // };
+    // console.log('Form Data Submitted:', submittedData);
+// Add actual submission logic here (e.g., API call, EmailJS, Formspree)
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+  publicKey: 'YOUR_PUBLIC_KEY',
+}).then(
+  () => {
+    console.log('SUCCESS!');
+  },(error) => {
+    console.log('FAILED...', error.text);
+  },
+);
+};
+;
 
   const headerVariants = {
     hidden: { y: 100, opacity: 0 },
