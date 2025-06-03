@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import "./FooterPage.css";
 import logo from "../../assets/images/Logo/Mdglobal (1).png";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
-import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom"; // Uncomment if using React Router for navigation
 const FooterPage = () => {
   const ImportantPages = [
     {
@@ -15,22 +14,22 @@ const FooterPage = () => {
       heading: 'Contractual Staffing',
       path: '/services/Contractual-Staffing-Services',
     },
-    {
-      heading: 'Job Consultancy in Dubai',
-      path: '/job-consultancy-in-dubai'
-    },
-    {
-      heading: 'Recruitment Agencies In Dubai',
-      path: '/recruitment-agencies-in-dubai',
-    },
+    // {
+    //   heading: 'Job Consultancy in Dubai',
+    //   path: '/job-consultancy-in-dubai'
+    // },
+    // {
+    //   heading: 'Recruitment Agencies In Dubai',
+    //   path: '/recruitment-agencies-in-dubai',
+    // },
     {
       heading: 'Outsourcing Companies in Dubai',
       path: '/outsourcing-companies-in-dubai',
     },
-    {
-      heading: 'Top IT Recruitment Agencies in Dubai',
-      path: '/it-recruitment-agencies-in-dubai',
-    },
+    // {
+    //   heading: 'Top IT Recruitment Agencies in Dubai',
+    //   path: '/it-recruitment-agencies-in-dubai',
+    // },
     {
       heading: 'Executive Search',
       path: '/services/Executive-Search',
@@ -48,7 +47,7 @@ const FooterPage = () => {
   const QuickLinks = [
     { heading: 'Blog', path: '/' },
     { heading: 'About Us', path: '/about' },
-    { heading: 'Contact Us', path: '/contact' },
+    { heading: 'Contact Us', path: '/contact-us' },
     { heading: 'Privacy Policy', path: '/privacy-Policy' },
   ];
 
@@ -135,9 +134,9 @@ const FooterPage = () => {
                   initial="initial"
                   whileHover="hover"
                 >
-                  <a href={item.path} className="footer-link">
+                  <Link to={item.path} className="footer-link">
                     <span className="footer-arrow">→</span> {item.heading}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
@@ -154,9 +153,9 @@ const FooterPage = () => {
                   initial="initial"
                   whileHover="hover"
                 >
-                  <a href={item.path} className="footer-link">
+                  <Link to={item.path} className="footer-link">
                     <span className="footer-arrow">→</span> {item.heading}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
