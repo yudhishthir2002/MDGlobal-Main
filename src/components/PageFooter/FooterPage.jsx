@@ -202,11 +202,7 @@ const FooterPage = () => {
                   </span>
                   {Array.isArray(loc.OfficeAddress)
                     ? loc.OfficeAddress.map((addr, i) => (
-                        <div key={i} className="">
-                          {addr}
-                        </div>
-                      ))
-                    : loc.OfficeAddress}
+                        <div key={i} className="">{addr}</div>)) : loc.OfficeAddress}
                 </span>
               </div>
               <div className="footer-address-text">
