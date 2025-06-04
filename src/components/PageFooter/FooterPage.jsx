@@ -208,8 +208,7 @@ const FooterPage = () => {
               <div className="footer-address-text">
                 <a href={`mailto:${loc.Email}`} className="footer-email flex">
                   <span className="footer-icon-address h-10 w-8 flex items-center justify-center rounded-full ">
-                    <FaEnvelope className="text-white" />
-                  </span>
+                    <FaEnvelope className="text-white" /></span>
                   <p className="text-[16px]"> {loc.Email}</p>
                 </a>
               </div>
