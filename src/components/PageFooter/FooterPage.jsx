@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./FooterPage.css";
-import logo from "../../assets/images/Logo/Mdglobal (1).png";
+import logo from '../../assets/images/Logo/Mdglobal.png';
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import { Link } from "react-router-dom"; // Uncomment if using React Router for navigation
 const FooterPage = () => {
@@ -172,7 +172,7 @@ const FooterPage = () => {
                   initial="initial"
                   whileHover="hover"
                 >
-                  <div  className="footer-link">
+                  <div className="footer-link">
                     <span className="footer-arrow">→</span> {item.heading}
                   </div>
                 </motion.li>
@@ -202,13 +202,18 @@ const FooterPage = () => {
                   </span>
                   {Array.isArray(loc.OfficeAddress)
                     ? loc.OfficeAddress.map((addr, i) => (
-                        <div key={i} className="">{addr}</div>)) : loc.OfficeAddress}
+                        <div key={i} className="">
+                          {addr}
+                        </div>
+                      ))
+                    : loc.OfficeAddress}
                 </span>
               </div>
               <div className="footer-address-text">
-                <a href={`mailto:${loc.Email}`} className="footer-email flex">
+                <a href={`mailto:${loc.Email}`} classN ame="footer-email flex">
                   <span className="footer-icon-address h-10 w-8 flex items-center justify-center rounded-full ">
-                    <FaEnvelope className="text-white" /></span>
+                    <FaEnvelope className="text-white" />
+                  </span>
                   <p className="text-[16px]"> {loc.Email}</p>
                 </a>
               </div>

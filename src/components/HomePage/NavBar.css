@@ -1,31 +1,55 @@
-
-
-nav  ul {
+/* Main nav list */
+nav ul {
   margin: 2px;
-  padding: 16px;
+  
   gap: 20px;
 }
-nav :nth-child(2) ul li :hover{
+
+/* Hover effect for nav links */
+nav ul li:hover a {
   text-decoration: underline;
   font-size: 15px;
   z-index: 100;
 }
-.hambar{
+
+/* Mobile hamburger icon */
+.hambar {
   margin-right: 30px;
   padding: 10px;
 }
 
-.navElement{
-  padding-bottom:10px;
-}
-.MainNavElement{
-  margin-left: 5px;
-  margin-right: 5px;
+/* Mobile nav element padding */
+.navElement {
+  padding-bottom: 10px;
 }
 
-.Download-brochure-sm{
-  margin-bottom: 2px;
+/* Mobile brochure button margin */
+.Download-brochure-sm {
+  margin-bottom: 10px;
 }
 
-
-
+/* Brochure button padding */
+.brochureMP {
+  padding: 5px;
+}
+.navGrid{
+  display: grid;
+  grid-template-columns: 5rem 3fr 7.5fr 3fr 5rem;
+}
+.logo {
+  grid-column: 2/3;
+  justify-content: start;
+  text-align: left;
+}
+.LogoPNG{
+ 
+  width: 70%;
+}
+.Navbutton {
+  grid-column: 3/4; 
+  text-align: center;
+}
+.brochuseButton{
+  grid-column: 4/5;
+  text-align: end;
+}
